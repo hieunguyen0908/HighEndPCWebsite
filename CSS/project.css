@@ -1,0 +1,378 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{max-width: 1280px; height: 350px; margin: 0 auto;}
+
+header{width: auto; height: 400px; }
+
+header img{width: 100%; height: 100%;}
+
+nav{width: 100%;height: 30px;background-color: #555;margin-bottom: 5px; overflow: auto;}
+
+nav a{color: #FFF;font-weight: bold;font-size: 20px;text-decoration: none;width: 150px;height: 30px;text-align: center;float: left;line-height: 30px; display: block; }
+
+.active {
+  background-color: #4CAF50;
+}
+
+nav .search-container {
+  float: right;
+}
+nav .search-container button {
+  float: right;
+  padding: 5px;
+  margin-top: 0px;
+  margin-right: 30px;
+  background: #3468F5;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+
+}
+
+nav .search-container button:hover {
+  background-color: burlywood;
+	color: antiquewhite;
+}
+
+
+nav a:hover{color: #F36;background-color: #FFC;}
+
+nav input[type=text] {
+  float: left;
+  padding: 5px;
+  border: 1px solid grey;
+  margin-top: 0px;
+  margin-right: 0px;
+  font-size: 16px;
+}
+
+.contenthome{width: 100%;min-height: 800px;background-color: #D6D6D6;color: #FFF;float: left; text-align: center;}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+	
+}
+
+
+aside{width: 270px;min-height: 800px;float: right;background-color: #D6D6D6;}
+
+footer{width: 100%; height: 550px;background-color: #FFF;color: black;clear: both;}
+
+footer ul{padding: 0px 40px; list-style-type: circle;}
+
+footer .footer_left{float: left; font-size: 15px;}
+
+footer .footer_right{width: 45%; height: 200px; float: right; margin-bottom: 10px; margin-top: 10px; text-align: center;}
+
+.footer_center p{
+	color: aqua;
+	margin-top: 1px;
+	font-size: 18px;
+	margin-bottom: 2px;
+	padding-right: 160px;
+}
+
+.footer_left .hotline{font-size: 25px; color: rgba(25,0,244,1.00);}
+
+
+/*Ipad ngang (1024 x 768)*/
+@media screen and (max-width: 1024){
+	.container {width: 100%;}
+}
+
+/* Phone */
+@media screen and (max-width: 640px){
+	.container {width: 100%;}
+	article{width: 100%; float: none;}
+	aside{width: 100%; float: none;}
+} 
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  nav a, nav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  nav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+.list{
+	width: 100%;
+	min-height: 800px;
+	background-color: #CCC;
+	margin: 0 auto;
+	
+}
+
+.product{
+	width: 280px;  /*290px*/
+	height: 350px;
+	text-align: center;
+	margin-left: 30px;
+	margin-top: 30px;
+	background-color: #FFFFFF;
+	float: left;
+	border: 2px solid #F0840C;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	position: relative;
+	display: inline-block;
+}
+
+.product >img{
+	width: 250px;
+	height: 250px;
+}
+
+/*
+.product img:hover{
+	transform: scale(2,2);
+	-webkit-transform: scale(2,2);
+	-moz-transform: scale(2,2);
+	-o-transform: scale(2,2);
+	-ms-transform: scale(2,2);
+	
+}
+*/
+
+.product img{
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
+
+.name{
+	color: #00C;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.price{
+	color: #F60;
+	font-size: 20px;
+}
+
+.price del{
+	color: #666;
+}
+
+.promotion{
+	width: 150px;
+	height: 20px;
+	padding: 10px;
+	background-color: rgba(247,4,9,1.00);
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 20px;
+	top: 10px;
+	right: 10px;
+	position: absolute;
+	left: 120px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	-webkit-box-shadow: 0px 0px 15px 1px rgba(71,67,71,1);
+	-moz-box-shadow: 0px 0px 15px 1px rgba(71,67,71,1);
+	box-shadow: 0px 0px 15px 1px rgba(71,67,71,1);
+}
+
+.newinfo{
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	float: inherit;
+}
+.newinfo img{
+	float: left;
+	padding-left: 10px;
+}
+.newinfo p{
+	color: 	darkgoldenrod;
+	padding-left: 100px
+}
+aside{
+	width: 270px;
+	min-height: 800px;
+	float: right;
+	background-color: #D6D6D6;
+
+}
+/*
+aside h1{
+	color: #FFF;
+	background-color: rgba(221,108,110,1.00);
+	height: 40px;
+	margin: 0px;
+	text-align: center;
+	line-height: 40px;
+}
+*/
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+	.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-align: inherit;
+  transition: .5s ease;
+  background-color: rgba(66,63,63,0.95);
+  border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.overlay table {
+  margin-top: 25px;
+}
+
+.overlay .color-red {
+  color: red;
+  font-size: 20px;
+}
+
+.product:hover .overlay {
+  opacity: 1;
+  height: 100%;
+}
+
+
+
+
+
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #47A9E0;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.chat-popup .title h1{
+/*  border-style: inset;*/
+  text-align: center;
+/*  background-color: rgb(255, 255, 153);*/
+}
+
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  border-style: inset;
+  background-color: rgb(255, 255, 153);
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.form-control:focus {
+    border-style: inset;
+  background-color: rgb(255, 255, 153);
+  outline: none;
+}
+
+

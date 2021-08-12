@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="CSS/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>If you need any assistance, please contact us</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="img-magnifier-container">
+          <img class="coffeecup" src="Images/coffeecup.jpg" draggable="false" width="95%" height="525px" />
+        </div>
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" required id="fname" name="firstname" placeholder="Your name..." onFocus="myFunction(this)"
+            onBlur="myFunction2(this)">
+          <label for="lname">Last Name</label>
+          <input type="text" required id="lname" name="lastname" placeholder="Your last name..."
+            onFocus="myFunction(this)" onBlur="myFunction2(this)">
+          <label for="country">Country</label>
+          <select id="country" required name="country">
+            <option value="australia" disabled>Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="vietnam" selected>Viet Nam</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="thailand">Thailand</option>
+          </select>
+          <label for="email">Email</label>
+          <input type="text" required id="email" name="email" placeholder="example@example.com"
+            onFocus="myFunction(this)" onBlur="myFunction2(this)">
+          <label for="subject">Subject</label>
+          <textarea id="subject" required name="subject" placeholder="Write something..." style="height:170px"
+            onFocus="myFunction(this)" onBlur="myFunction2(this)"></textarea>
+          <center><input type="submit" value="Submit" formmethod="post" title="Summit"></center>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction(x) {
+      x.style.background = "#ffff99";
+    }
+
+    function myFunction2(x) {
+      x.style.background = "white";
+    }
+
+
+  </script>
+
+</body>
+
+</html>
